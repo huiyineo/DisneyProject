@@ -1,0 +1,177 @@
+<!DOCTYPE HTML>
+<!--
+	Stellar by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>Disney</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<!--[if lte IE 8]><script src="assets/js/ie/html5shiv.js"></script><![endif]-->
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<!--[if lte IE 9]><link rel="stylesheet" href="assets/css/ie9.css" /><![endif]-->
+		<!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]-->
+	</head>
+	<body>
+
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				<!-- Header -->
+					<header id="header" class="alt">
+						<span class="logo"><img src="images/Disney.svg" alt="" /></span>
+						<!-- <h1><img src="images/Disney.svg" alt="" /></h1> -->
+						<p>A one page analysis of disney characters</p>
+					</header>
+
+				<!-- Nav -->
+					<nav id="nav">
+						<ul>
+							<li><a href="#intro" class="active">The Dataset</a></li>
+							<li><a href="#first">The Network</a></li>
+							<li><a href="#second">Analysis</a></li>
+							<!-- <li><a href="#cta">Get Started</a></li> -->
+						</ul>
+					</nav>
+
+				<!-- Main -->
+					<div id="main">
+
+						<!-- Introduction -->
+							<section id="intro" class="main">
+								<div class="spotlight">
+									<div class="content">
+										<header class="major">
+											<h2>The Dataset</h2>
+										</header>
+										<p class="content">The dataset used is extracted from the Disney wikia. List of all the disney characters available on the disney wikia page and their corresponding "personality" section of their individual article are extracted into a json file. The file is 28.4 MB and it can be download in the link below. </p>
+										<ul class="actions">
+											<li><a href="characters_list" download class="button special">Download</a></li>
+										</ul>
+									</div>
+									<span class="image"><a href="http://disney.wikia.com/wiki/The_Disney_Wiki"><img src="images/SorcererMickeyHead.png" alt="" /></a></span>
+								</div>
+							</section>
+
+						<!-- First Section -->
+							<section id="first" class="main special">
+								<header class="major">
+									<h2>The Network</h2>
+								</header>
+								<ul class="statistics">
+									<li class="style1">
+										<span class="icon fa-laptop"></span>
+										<strong>3,248</strong> Characters
+									</li>
+									<li class="style2">
+										<span class="icon fa-diamond"></span>
+										<strong>449</strong> Personalities
+									</li>
+									<li class="style3">
+										<span class="icon fa-code-fork"></span>
+										<strong>10,352</strong> Links
+									</li>
+								</ul>
+								<span class="image fit"><img src="images/network.png" alt="" /></span>
+								
+									<p >The red nodes indicates personalites traits while blue nodes indicates characters. <br> The network created looks complicated. This is because there is a total of <strong>3248 characters</strong> and <strong>449 personalites</strong> in the network. Thus, a highly complicated network of <strong>10352 links between a total of 3697 nodes</strong> is formed.</p>
+							</section>
+
+						<!-- Second Section -->
+							<section id="second" class="main">
+								<header class="major">
+									<h2>Analysis</h2>
+									<h3><strong>The top 10 personalities are</strong></h3>
+										<ol>
+											<li>Kind</li>
+											<li>Caring</li>
+											<li>Friendly</li>
+											<li>Loyal</li>
+											<li>Brave</li>
+											<li>Funny</li>
+											<li>Sweet</li>
+											<li>Mean</li>
+											<li>Helpful</li>
+											<li>Intelligent</li>
+										</ol>
+								</header>
+								<p>Only one out of the top 10 personalities have negative meaning. This is very logical as most of disney characters are good, with only a few villians in each movie or show.</p>
+								<hr />
+
+								<h3><strong>Forming communities</strong></h3>
+								<p>All the nodes are divided into mainly <strong>16 communities</strong> based on <i>the <strong>louvain method</strong> described in Fast unfolding of communities in large networks</i>.<br></p>
+								<p>After looking through the list of characters in each community, it is noted that characters from the same show/film usually do not appear in the same community.</p>
+								<p> Let's look at the 5 main characters from the movie - <b>Wreck-It Ralph</b></p>
+								<span class="image fit"><img src="images/wir characters.png" alt="" /></span>
+								<p>These 5 main characters are all grouped in different communities. This is logical as they all have very different characteristics. Disney characters from the same film/show usually have very different personality as it will add to the dynamic of the show and make it more interesting.</p>
+								<hr />
+
+								<h3><strong>Sentiment Analysis on Popular Characters' Personalities</strong></h3>
+								<p>The top 250 characters are extracted from disney wikia. Sentiment analysis is done on their corresponding personality. If it scored an average sentiment of above 5, it will be listed as good, and below 5 will be listed as bad.</p>
+								<div class="box alt">
+											<div class="row uniform">
+								<div class="4u"><span>&nbsp;</span></div>
+								<div class="4u"><span class="image fit"><img src="images/good_perc.png" alt="" /></span></div>
+								
+								</div>
+										</div>
+								<p><b>74.87% </b> characters in the popular list are good! People are indeed more attracted to good characters more than the bad. However around 25% of the characters are bad, which means that people are generally still very interested in characters with bad personality as well.</p>
+
+								<h3><strong>Is there link between personality types and popularity and likability?</strong></h3>
+								<ol>
+									<li>Kind: 23%</li>
+									<li>Caring: 23% </li>
+									<li>Friendly: 13% </li>
+									<li>Loyal: 12%</li>
+									<li>Brave: 13%</li>
+									<li>Funny: 5%</li>
+									<li>Sweet: 10%</li>
+									<li>Mean: 4%</li>
+									<li>Helpful: 6%</li>
+									<li>Intelligent: 22%</li>
+								</ol>
+								<p>Popular characters don't contains much popular personalites. This may be due to people liking more original characters that are refreshing instead of characters with personality very similar to other characters.</p>
+
+
+								
+
+
+
+
+							</section>
+
+						<!-- Read the notebook -->
+							<section id="cta" class="main special">
+								<header class="major">
+									<h2>Read the explainer notebook</h2>
+									<p>The notebook contains more analysis and codes for the above project.</p>
+								</header>
+								<footer class="major">
+									<ul class="actions">
+										<li><a href="" download class="button special">Go to Notebook</a></li>
+									</ul>
+								</footer>
+							</section>
+
+					</div>
+
+				<!-- Footer -->
+					<footer id="footer">
+						<p class="copyright">&copy; Untitled. Design: <a href="https://html5up.net">HTML5 UP</a>.</p>
+					</footer>
+
+			</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/skel.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>
